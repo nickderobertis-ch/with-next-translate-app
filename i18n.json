@@ -3,6 +3,7 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common"],
-    "/[lang]": ["home"]
+    "/[lang]": ["home"],
+    "/[lang]/app-dir": ["home"]
   }
 }
