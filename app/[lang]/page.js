@@ -2,6 +2,14 @@ import Link from "next/link";
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 
+const languageCodes = ["en", "ca", "ar", "he"];
+
+export async function generateStaticParams() {
+  return languageCodes.map((lang) => ({
+    lang,
+  }));
+}
+
 export default function Home() {
   const { t, lang } = useTranslation();
   const isRTL = lang === "ar" || lang === "he";
